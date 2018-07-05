@@ -1,0 +1,54 @@
+package com.enlume.Servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.sql.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class LoginServlet2
+ */
+@WebServlet("/Login1")
+public class LoginServlet2 extends HttpServlet {
+String usname,pwd1;
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		res.setContentType("html/text");
+		res.sendRedirect("Login.html");
+		PrintWriter out = res.getWriter();
+		connection con = new connection();
+		Connection co = con.getConnection();
+		Statement st = con.getStatement();
+		
+    usname = req.getParameter("username2");
+    pwd1 = req.getParameter("pwd2");
+    
+    try
+    { 
+    	PreparedStatement ps = co.prepareStatement("SELECT * FROM users WHERE username=usname AND pwd =pwd2");
+    	ResultSet rs = ps.executeQuery();
+    	if(rs.next())
+    	{
+    	  HttpSession session = req.getSession();
+    	  System.out.println(session.isNew());
+    	  session.setAttribute("username",usname);
+    	  res.sendRedirect("./Home1");
+    	}
+    }
+    catch(Exception e)
+    {
+    	e.printStackTrace();
+    }
+		
+	}
+		
+	}
+

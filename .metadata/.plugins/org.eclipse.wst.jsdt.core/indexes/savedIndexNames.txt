@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/maddy/eclipse-workspace1/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2197966814.index
+2708838707.index
+1802609395.index
+4041432619.index
+3105833866.index
+2567659824.index
+3562722504.index

@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="./Admin1" method="get">
+
+<h1>Registration Page</h1><hr>
+
+<table>
+<tr>
+	<th>ProductId</th>
+	<td> <input type="text" name="username"></td>
+</tr>
+
+<tr>
+	<th>ProductName</th>
+	<td> <input type="text" name="pwd"></td>
+</tr>
+
+<tr>
+	<th>Price</th>
+	<td> <input type="text" name="price"></td>
+</tr>
+
+<tr>
+	<th>Image</th>
+	<td> <input type="text" name="image"></td>
+</tr>
+
+<tr>
+	<th>Desc</th>
+	<td> <input type="text" name="desc"></td>
+</tr>
+<tr>
+	<th>ReviewCount</th>
+	<td> <input type="text" name="review"></td>
+</tr>
+
+<tr>
+	<th>Stars</th>
+	<td> <input type="text" name="stars"></td>
+</tr>
+
+<tr>
+	<th>Category</th>
+	<td> <input type="text" name="cate"></td>
+</tr>
+
+<tr>
+	<td> <input type="submit" value="register"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

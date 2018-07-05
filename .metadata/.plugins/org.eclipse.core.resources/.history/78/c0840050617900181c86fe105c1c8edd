@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action='./Calc' method="get">
+<table>
+<th>"enter first value"</th>
+<td><input type="text" name="num"></td>
+<th>
+</table>
+</form>
+</body>
+</html>

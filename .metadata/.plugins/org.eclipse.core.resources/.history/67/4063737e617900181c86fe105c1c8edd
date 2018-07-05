@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action='./Calc' method="get">
+<table>
+<tr>
+<th>"enter first value"</th>
+<td><input type="text" name="num"></td>
+</tr>
+<tr>
+<th>"enter Second value"</th>
+<td><input type="text" name="num"></td>
+</tr>
+<tr>
+<th>"enter operator"</th>
+<td><input type="text" name="num"></td>
+</tr>
+<tr>
+<td><input type="submit" value="check"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
